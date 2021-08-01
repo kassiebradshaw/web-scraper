@@ -1,31 +1,7 @@
 import requests
 from bs4 import BeautifulSoup
 
-# WORKING FUNCTIONS START ON LINE 28
-# This top part is just my notes & attempts as I was working through and figuring things out.
-
 URL = 'https://en.wikipedia.org/wiki/History_of_Mexico'
-
-# page = requests.get(URL)
-# # print(page.content)
-# soup = BeautifulSoup(page.content, 'html.parser')
-# print(soup)
-
-# look for class detail information for what we're looking for...
-
-# <sup class="noprint Inline-Template Template-Fact">
-# a href="/wiki/Wikipedia:Citation_needed" title="Wikipedia:Citation needed"
-# span title="This claim needs references to reliable sources. (October 2011)" -- date is different on all citations needed
-# <span>citation needed</span>
-
-# class for citations needed
-# citations_needed = soup.find_all(class_="noprint Inline-Template Template-Fact")
-# print(results)
-
-# for cite in citations_needed:
-#   print (cite.parent.text)
-
-#---------- WEB SCRAPER FUNCTIONS -------------
 
 def web_scraper(url):
   """This will invokes both of the other functions
